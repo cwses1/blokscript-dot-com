@@ -1,4 +1,4 @@
-## [Blokscript](/) > Literals
+# [Blokscript](/) > Literals
 
 A literal is an expression that specifies a value inline 
 

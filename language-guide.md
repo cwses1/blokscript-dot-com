@@ -1,6 +1,5 @@
 # Blokscript Language Guide
 
-----------
 * Concepts
 * [Types](/types.html)
 * [Literals](literals.html)

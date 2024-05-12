@@ -1,7 +1,5 @@
 # Blokscript
 
-----------
-
 Blokscript is a programming language for [Storyblok](https://www.storyblok.com/).
 
 * [Use Cases](use-cases.html)

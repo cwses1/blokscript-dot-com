@@ -1,6 +1,5 @@
 # Other Storyblok Tools
 
-----------
 Blokscript is just one tool in the Storyblok ecosystem.  Here are some others.
 
 

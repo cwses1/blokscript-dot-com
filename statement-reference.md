@@ -1,6 +1,5 @@
 # Blokscript Statement Reference
 
-----------
 * [be](be.html)
 * block
 * compare blocks

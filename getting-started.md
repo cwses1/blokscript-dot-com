@@ -1,4 +1,4 @@
-## [Blokscript](/) > Getting Started
+# [Blokscript](/) > Getting Started
 
 ### Running The Blokscript Interpreter
 

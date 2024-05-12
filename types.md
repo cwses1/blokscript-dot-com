@@ -1,4 +1,4 @@
-## [Blokscript](/) > Types
+# [Blokscript](/) > Types
 
 #### String
 

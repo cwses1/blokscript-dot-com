@@ -1,4 +1,4 @@
-## [Blokscript](/) > publish story
+# [Blokscript](/) > publish story
 
 Publish a single story in a space.
 

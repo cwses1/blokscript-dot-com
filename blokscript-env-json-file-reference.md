@@ -1,7 +1,5 @@
 # `blokscript-env.json` File Reference
 
-----------
-
 	{
 		"baseUrl": "https://api-us.storyblok.com",
 		"token": "<your_personal_access_token_here>",

@@ -1,4 +1,4 @@
-## [Blokscript](/) > How It Works
+# [Blokscript](/) > How It Works
 
 The Blokscript interpreter connects to Storyblok's [Content Delivery API](https://www.storyblok.com/docs/api/content-delivery/v2/getting-started/introduction) and [Management API](https://www.storyblok.com/docs/api/management/getting-started/introduction) to manage spaces and everything in them.
 
