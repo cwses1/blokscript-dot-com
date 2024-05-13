@@ -1,4 +1,4 @@
-# Blokscript Language Guide
+# Language Guide
 
 * Concepts
 * [Types](/types.html)

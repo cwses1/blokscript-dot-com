@@ -1,1 +1,1 @@
-# [Blokscript](/) > String Type
+# String Type

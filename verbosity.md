@@ -1,4 +1,4 @@
-## [Blokscript](/) > Verbosity
+## Verbosity
 
 	be verbose;
 

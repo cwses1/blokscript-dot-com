@@ -1,4 +1,4 @@
-# [Blokscript](/) > be
+# `be`
 
 	be verbose;
 	be quiet;

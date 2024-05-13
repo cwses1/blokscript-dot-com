@@ -1,6 +1,4 @@
-# Blokscript Examples
-
-----------
+# Examples
 
 Copy all stories from one space to another:
 

@@ -1,4 +1,4 @@
-# Blokscript Statement Reference
+# Statement Reference
 
 * [be](be.html)
 * block

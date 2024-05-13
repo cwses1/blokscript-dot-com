@@ -1,6 +1,6 @@
-# Blokscript
+# BlokScript
 
-Blokscript is a programming language for [Storyblok](https://www.storyblok.com/).
+BlokScript is a programming language for [Storyblok](https://www.storyblok.com/).
 
 * [Use Cases](use-cases.html)
 * [How It Works](how-it-works.html)

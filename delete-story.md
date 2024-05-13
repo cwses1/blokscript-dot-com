@@ -1,3 +1,3 @@
-# [Blokscript](/) > delete story
+# `delete story`
 
     delete story STORY;

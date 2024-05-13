@@ -1,3 +1,3 @@
-# [Blokscript](/) > copy story
+# `copy story`
 
 Copy a single story.

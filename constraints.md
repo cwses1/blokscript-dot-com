@@ -1,4 +1,6 @@
-# [Blokscript](/) > Constraints
+# BlokScript Constraints
+
+Space Constraints
 
 Block Constraints
 

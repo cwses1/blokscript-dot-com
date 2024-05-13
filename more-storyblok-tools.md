@@ -1,6 +1,6 @@
-# Other Storyblok Tools
+# More Storyblok Tools
 
-Blokscript is just one tool in the Storyblok ecosystem.  Here are some others.
+BlokScript is just one tool in the Storyblok ecosystem.  Here are some others.
 
 
 ## Storyblok Command Line Interface (CLI)
