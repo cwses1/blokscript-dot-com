@@ -1,4 +1,4 @@
-# `blokscript-env.json`
+# `blokscript-env.json` File Reference
 
 	{
 		"baseUrl": "https://api-us.storyblok.com",

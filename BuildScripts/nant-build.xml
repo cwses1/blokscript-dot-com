@@ -1,0 +1,56 @@
+<project name="BlokScript Website Build">
+	<property name="MarkedPath" value="C:\Users\cory.walker\AppData\Roaming\npm\marked.cmd" />
+	<property name="MustachePath" value="C:\Users\cory.walker\AppData\Roaming\npm\mustache.cmd" />
+	<property name="MarkdownDir" value="..\Markdown" />
+	<property name="TemplatesDir" value="..\Templates" />
+	<property name="TemplateFilePath" value="${TemplatesDir + '\standardPage.html'}" />
+	<property name="WebRootDir" value="..\WebRoot" />
+	<property name="ViewsDir" value="..\Views" />
+	<property name="StylesDir" value="..\Styles" />
+
+	<target name="build">
+
+		<delete>
+			<fileset basedir="${WebRootDir}">
+				<include name="*.*" />
+			</fileset>
+		</delete>
+
+		<foreach item="File" in="${MarkdownDir}" property="MarkdownFilePath">
+			<echo>${MarkdownFilePath}</echo>
+
+			<property name="FileNameNoExt" value="${path::get-file-name-without-extension(MarkdownFilePath)}" />
+			<property name="ViewFilePath" value="${ViewsDir + '\' + FileNameNoExt + '.json'}" />
+			<property name="BodyInnerHtmlFilePath" value="${WebRootDir + '\' + FileNameNoExt + '_body.html'}" />
+			<property name="EmptyPageFilePath" value="${WebRootDir + '\' + FileNameNoExt + '_empty.html'}" />
+			<property name="PageFilePath" value="${WebRootDir + '\' + FileNameNoExt + '.html'}" />
+
+			<exec program="${MarkedPath}">
+				<arg value="-i" />
+				<arg value="${MarkdownFilePath}" />
+				<arg value="-o" />
+				<arg value="${BodyInnerHtmlFilePath}" />
+			</exec>
+
+			<exec program="${MustachePath}">
+				<arg value="${ViewFilePath}" />
+				<arg value="${TemplateFilePath}" />
+				<arg value="${EmptyPageFilePath}" />
+			</exec>
+
+			<loadfile file="${EmptyPageFilePath}" property="EmptyPageHtml" />
+			<loadfile file="${BodyInnerHtmlFilePath}" property="BodyHtml" />
+			<echo file="${PageFilePath}">${string::replace(EmptyPageHtml, '_____body_____', BodyHtml)}</echo>
+		</foreach>
+
+		<copy file="${StylesDir}\blokscript.css" todir="${WebRootDir}" />
+
+		<delete>
+			<fileset basedir="${WebRootDir}">
+				<include name="*_body.html" />
+				<include name="*_empty.html" />
+			</fileset>
+		</delete>
+
+	</target>
+</project>

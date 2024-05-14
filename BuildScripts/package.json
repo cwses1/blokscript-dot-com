@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "gulp": "^5.0.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-remarkable": "^2.1.0",
+    "marked": "^12.0.2",
+    "mustache": "^4.2.0"
+  }
+}
