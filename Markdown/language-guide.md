@@ -1,8 +1,8 @@
 # Language Guide
 
-* Concepts
+* [Concepts](concepts.html)
 * [Types](types.html)
 * [Literals](literals.html)
-* Variables
+* [Variables](variables.html)
 * [Constraints](constraints.html)
 * [Verbosity](verbosity.html)
