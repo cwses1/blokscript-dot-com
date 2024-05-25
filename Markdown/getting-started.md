@@ -18,12 +18,13 @@ BlokScript will look for the `blokscript-env.json` file in the current working d
 Create `blokscript-env.json` in your current working directory.
 
 	{
-		"baseUrl": "https://api-us.storyblok.com",
-		"token": "<your_personal_access_token_here>",
+		"managementApiBaseUrl": "https://api-us.storyblok.com",
+		"contentDeliveryApiBaseUrl": "https://api-us.storyblok.com/v2/cdn",
+		"personalAccessToken": "<your_personal_access_token_here>",
 		"verbosity": "verbose"
 	}
 
-Paste your Storyblok personal access token in the `token` field above.  Go to the [Personal Access Token](https://app.storyblok.com/#/me/account?tab=token) in your Storyblok account to get or generate the token.
+Paste your Storyblok personal access token in the `personalAccessToken` field above.  Go to the [Personal Access Token](https://app.storyblok.com/#/me/account?tab=token) in your Storyblok account to get or generate the token.
 
 You can read more about the `blokscript-env.json` file in the [`blokscript-env.json` File Reference](blokscript-env-json-file-reference.html).
 

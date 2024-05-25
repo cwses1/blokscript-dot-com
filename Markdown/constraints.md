@@ -1,9 +1,11 @@
 # Constraints
 
-Space Constraints
+A constraint appears in a `where` clause.
 
-Block Constraints
+### Story Constraints
 
-Datasource Constraints
+### Block Constraints
 
-Story Constraints
+### Datasource Constraints
+
+### Space Constraints

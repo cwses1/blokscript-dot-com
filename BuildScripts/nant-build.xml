@@ -10,40 +10,56 @@
 
 	<target name="build">
 
+		<echo>Cleaning web root.</echo>
 		<delete>
 			<fileset basedir="${WebRootDir}">
 				<include name="*.*" />
 			</fileset>
 		</delete>
 
-		<foreach item="File" in="${MarkdownDir}" property="MarkdownFilePath">
-			<echo>${MarkdownFilePath}</echo>
+		<foreach item="File" property="MarkdownFilePath">
+			<in>
+				<items basedir="${MarkdownDir}">
+					<include name="*.md" />
+				</items>
+			</in>
+			<do>
+				<echo>Processing file: ${MarkdownFilePath}</echo>
 
-			<property name="FileNameNoExt" value="${path::get-file-name-without-extension(MarkdownFilePath)}" />
-			<property name="ViewFilePath" value="${ViewsDir + '\' + FileNameNoExt + '.json'}" />
-			<property name="BodyInnerHtmlFilePath" value="${WebRootDir + '\' + FileNameNoExt + '_body.html'}" />
-			<property name="EmptyPageFilePath" value="${WebRootDir + '\' + FileNameNoExt + '_empty.html'}" />
-			<property name="PageFilePath" value="${WebRootDir + '\' + FileNameNoExt + '.html'}" />
+				<property name="FileNameNoExt" value="${path::get-file-name-without-extension(MarkdownFilePath)}" />
+				<property name="ViewFilePath" value="${ViewsDir + '\' + FileNameNoExt + '.json'}" />
+				<property name="BodyInnerHtmlFilePath" value="${WebRootDir + '\' + FileNameNoExt + '_body.html'}" />
+				<property name="EmptyPageFilePath" value="${WebRootDir + '\' + FileNameNoExt + '_empty.html'}" />
+				<property name="PageFilePath" value="${WebRootDir + '\' + FileNameNoExt + '.html'}" />
 
-			<exec program="${MarkedPath}">
-				<arg value="-i" />
-				<arg value="${MarkdownFilePath}" />
-				<arg value="-o" />
-				<arg value="${BodyInnerHtmlFilePath}" />
-			</exec>
+				<exec program="${MarkedPath}">
+					<arg value="-i" />
+					<arg value="${MarkdownFilePath}" />
+					<arg value="-o" />
+					<arg value="${BodyInnerHtmlFilePath}" />
+				</exec>
 
-			<exec program="${MustachePath}">
-				<arg value="${ViewFilePath}" />
-				<arg value="${TemplateFilePath}" />
-				<arg value="${EmptyPageFilePath}" />
-			</exec>
+				<exec program="${MustachePath}">
+					<arg value="${ViewFilePath}" />
+					<arg value="${TemplateFilePath}" />
+					<arg value="${EmptyPageFilePath}" />
+				</exec>
 
-			<loadfile file="${EmptyPageFilePath}" property="EmptyPageHtml" />
-			<loadfile file="${BodyInnerHtmlFilePath}" property="BodyHtml" />
-			<echo file="${PageFilePath}">${string::replace(EmptyPageHtml, '_____body_____', BodyHtml)}</echo>
+				<loadfile file="${EmptyPageFilePath}" property="EmptyPageHtml" />
+				<loadfile file="${BodyInnerHtmlFilePath}" property="BodyHtml" />
+				<echo file="${PageFilePath}">${string::replace(EmptyPageHtml, '_____body_____', BodyHtml)}</echo>
+			</do>
 		</foreach>
 
 		<copy file="${StylesDir}\blokscript.css" todir="${WebRootDir}" />
+
+		<copy todir="${WebRootDir}">
+			<fileset basedir="${MarkdownDir}">
+				<include name="*.png" />
+				<include name="*.pdf" />
+				<include name="*.pptx" />
+			</fileset>
+		</copy>
 
 		<delete>
 			<fileset basedir="${WebRootDir}">
