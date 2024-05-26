@@ -1,13 +1,19 @@
 # Statements
 
-Statements tell BlokScript what to do.  A statement will typically contain an [expression](expressions.html).
+A statement will typically contain an [expression](expressions.html).
 
 * [be](be.html)
 * compare blocks
 * copy blocks
 * copy datasources
-* [copy story](copy-story.html)
+* copy datasource entries
 * [copy stories](copy-stories.html)
+* [copy story](copy-story.html)
+* create datasource
+* create datasource entry
+* delete blocks
+* delete datasources
+* delete datasource entries
 * [delete story](delete-story.html)
 * delete stories
 * [publish story](publish-story.html)

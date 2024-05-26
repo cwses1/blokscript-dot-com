@@ -279,3 +279,11 @@ table tr:nth-child(2n) {
 img {
   max-width: 100%
 }
+
+img[src="blokscript-logo-text.png"]
+{
+	width: 100%;
+	max-width: 6in;
+	margin: auto;
+	display: block;
+}
