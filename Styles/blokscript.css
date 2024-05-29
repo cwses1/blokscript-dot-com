@@ -280,7 +280,7 @@ img {
   max-width: 100%
 }
 
-img[src="blokscript-logo-text.png"]
+img.header
 {
 	width: 100%;
 	max-width: 6in;

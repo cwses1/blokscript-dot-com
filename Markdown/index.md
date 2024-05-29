@@ -1,4 +1,4 @@
-![BlokScript Logo & Text](blokscript-logo-text.png)
+<img src="blokscript-logo-text.png" class="header" />
 
 BlokScript is a [free](https://www.gnu.org/licenses/gpl-3.0.en.html), [open-source](https://github.com/cwses1/blokscript) programming language for [Storyblok](https://www.storyblok.com/) with a SQL-like syntax designed to expressively "move things around easily."
 
