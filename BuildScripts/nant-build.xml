@@ -58,6 +58,8 @@
 				<include name="*.png" />
 				<include name="*.pdf" />
 				<include name="*.pptx" />
+				<include name="*.zip" />
+				<include name="*.xcf" />
 			</fileset>
 		</copy>
 

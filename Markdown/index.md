@@ -8,6 +8,7 @@ Using BlokScript, you can easily do things - such as copy all stories from one s
 
 * [Use Cases](use-cases.html)
 * [How It Works](how-it-works.html)
+* [Binaries](binaries.html)
 * [Getting Started](getting-started.html)
 * [Examples](examples.html)
 * [Language Guide](language-guide.html)
