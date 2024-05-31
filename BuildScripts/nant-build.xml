@@ -60,6 +60,8 @@
 				<include name="*.pptx" />
 				<include name="*.zip" />
 				<include name="*.xcf" />
+				<include name="*.xml" />
+				<include name="*.txt" />
 			</fileset>
 		</copy>
 

@@ -1,7 +1,13 @@
-# License
+# BlokScript License
 
-## Code
-The BlokScript code is free, open source software licensed under [The GNU General Public License Version 3 (GPLv3)](https://www.gnu.org/licenses/gpl-3.0.en.html).
+## Language & Interpreter Source Code License
+The BlokScript source code for the language and interpreter is free, open source software given to the community and world and licensed under [The GNU General Public License Version 3 (GPLv3)](https://www.gnu.org/licenses/gpl-3.0.en.html).  You can read the license in the source code reporsitory [here](https://github.com/cwses1/blokscript).  This includes the C#, grammar code, build scripts, project files for Visual Studio 2022, project files for Visual Studio Code, and any markdown files you find in the repository.
+
+Other assets, such as binary files and logos, are not licensed under GPLv3 and are the property of their respective owners.
+
+## This Website's Source Code License
+
+This [website's source code](https://github.com/cwses1/blokscript-dot-com) (www.blokscript.com) is free, open source software given to the community and world and licensed under [The GNU General Public License Version 3 (GPLv3)](https://www.gnu.org/licenses/gpl-3.0.en.html).  You can read the license in the [source code repository](https://github.com/cwses1/blokscript-dot-com).  This includes any Markdown files, XML files, and build scripts you find in the repository.
 
 Other assets, such as binary files and logos, are not licensed under GPLv3 and are the property of their respective owners.
 

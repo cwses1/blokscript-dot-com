@@ -1,8 +1,8 @@
 <img src="blokscript-logo-text.png" class="header" />
 
-BlokScript is a [free](https://www.gnu.org/licenses/gpl-3.0.en.html), [open-source](https://github.com/cwses1/blokscript) programming language for [Storyblok](https://www.storyblok.com/) with a SQL-like syntax designed to expressively "move things around easily."
+BlokScript is a [free](https://www.gnu.org/licenses/gpl-3.0.en.html), [open-source](https://github.com/cwses1/blokscript) programming language for [Storyblok CMS](https://www.storyblok.com/) designed to "move things around easily."
 
-Using BlokScript, you can easily do things - such as copy all stories from one space to another - with just a single line of BlokScript code like this:
+Using BlokScript, you can copy all stories from one space to another with just a single line of code:
 
 	copy stories from space 'Advance' to space 'Napa';
 
@@ -16,6 +16,7 @@ Using BlokScript, you can easily do things - such as copy all stories from one s
 * [Expressions](expressions.html)
 * [Constraints](constraints.html)
 * [`blokscript-env.json` File Reference](blokscript-env-json-file-reference.html)
+* [Text Editor Support](text-editor-support.html)
 * [License](license.html)
 * [Credits](credits.html)
 * [More Storyblok Tools](more-storyblok-tools.html)
