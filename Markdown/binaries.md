@@ -4,8 +4,8 @@
 
 Download the .NET Core 8 Runtime version directly from this site.
 
-* [BlokScriptDotNetCore-0.0.2.zip](BlokScriptDotNetCore-0.0.2.zip)
-* SHA256(BlokScriptDotNetCore-0.0.2.zip)= `cd44d75361e7b233e153488d752dda467702c186cbbf1e0e6b6a975ef7088a90`
+* [BlokScriptDotNetCore-0.0.3.zip](BlokScriptDotNetCore-0.0.3.zip)
+* SHA256(BlokScriptDotNetCore-0.0.3.zip)= `c127326eef9fdb42222cbadff2c138459035af4bbfca277e3055b839730cc746`
 
 Installation:
 
@@ -17,8 +17,8 @@ Installation:
 
 Download the .NET Framework 4.8.1 Runtime version directly from this site.
 
-* [BlokScriptDotNetFramework-0.0.2.zip](BlokScriptDotNetFramework-0.0.2.zip)
-* SHA256(BlokScriptDotNetFramework-0.0.2.zip)= `107917c944db806e59e5f93551f6cbc518d31a87366885392f50651e370f47ec`
+* [BlokScriptDotNetFramework-0.0.3.zip](BlokScriptDotNetFramework-0.0.3.zip)
+* SHA256(BlokScriptDotNetFramework-0.0.3.zip)= `f7cdc20eb8350d542832014adf02d42570a9cc12e22cd1410e1493e7e27a38e2`
 
 Installation:
 

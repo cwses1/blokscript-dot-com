@@ -1,21 +1,37 @@
-# Verbosity
+# `create datasource`
 
-How much output BlokScript gives you.  Error messages are always printed.
+Creates a new datasource in a space.
 
-## Quiet
+## Long Form
 
-BlokScript will not output any messages except for errors.  A script that runs successfully without an errors will have no output.
+Create a datasource and explicitly specify the `name` and `slug`.
 
-	be quiet;
+	create datasource
+	(
+		name = 'Competitors',
+		slug = 'competitors'
+	)
+	in space 'Advance';
 
-## Verbose
+## Short Form
 
-BlokScript will tell you what it's doing.  You will receive messages about API calls, how many records are being worked on, and error messages.
+Create a datasource with name `Competitors` in the space.  BlokScript will automatically *sluggify* the name for you.
 
-	be verbose;
+	//
+	// EQUIVALENT TO THE LONG FORM STATEMENT.
+	// CREATES A DATASOURCE NAMED 'Competitors' WITH SLUG 'competitors'.
+	//
+	create datasource 'Competitors' in space 'Advance';
 
-## Debugger
+Another example:
 
-BlokScript will tell you what it's doing in verbose mode and give you additional details useful for developers, such as the requests and responses of API calls.  If there is an error, the stack trace will be shown.
+	//
+	// NAME: 'Virtual Competitors'
+	// SLUG: 'virtual-competitors'
+	//
+	create datasource 'Virtual Competitors' in space 'Advance';
 
-	be debugger;
+When we *sluggify* a string we make it lower case and replace the spaces with dashes.
+
+## See also
+* [Glossary](glossary.html)
